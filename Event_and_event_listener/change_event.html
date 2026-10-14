@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #main{
+            width: 100%;
+            height: 100vh;
+            font-family: 'Times New Roman', Times, serif;
+            background-color: #222;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        #mainfile{
+            display: none;
+        }
+        #file{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;;
+            height: 2vh;
+            padding: 2px;
+            color: white;
+            background-color: rgba(100, 224, 100, 0.539);
+            border: 3px solid white;
+        }
+        #file:hover{
+            background-color: rgba(4, 33, 4, 0.539);
+        }
+    </style>
+</head>
+<body>
+    <h1>profile create </h1>
+    <div id="main" >
+        <input type="file" name="" id="mainfile">
+        <div id="file" >
+            Upload file
+        </div>
+    </div>
+    <script  src="profile.js"></script>
+</body>
+</html>
