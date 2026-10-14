@@ -78,15 +78,22 @@ function showUsers(arr) {
 }
 showUsers(users);
 
-
+let nocard = document.querySelector(".nocard");
 let inp = document.querySelector(".inp");
 console.log(inp.value)
 inp.addEventListener("input",function(){
     console.log(inp.value)
     let newuser = users.filter((user)=>{
         // return user.name === inp.value
-         return user.name.startsWith(inp.value);
+        return user.name.startsWith(inp.value);
     })
+    if(newuser.length === 0){
+        document.querySelector(".cards").textContent = " "
+        nocard.textContent = "NO CARD FOUND OR NO USER FOUND"
+    }else{
     document.querySelector(".cards").textContent = " "
     showUsers(newuser);
+        nocard.textContent = " "
+
+    }
 })
